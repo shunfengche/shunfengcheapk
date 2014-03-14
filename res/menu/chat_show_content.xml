@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/andy_repeat" android:title="转发"></item>
+    <item android:id="@+id/andy_copy" android:title="复制"></item>
+    <item android:id="@+id/andy_favorite" android:title="加入收藏夹"></item>
+    <item android:id="@+id/andy_batch_opeation" android:title="批量操作"></item>
+    <item android:id="@+id/andy_delete" android:title="删除"></item>
+
+</menu>

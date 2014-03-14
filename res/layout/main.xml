@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+  
+	
+    
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+     
+        android:layout_height="fill_parent"
+      
+      >
+  <com.baidu.mapapi.MapView android:id="@+id/bmapsView"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:clickable="true" />
+    
+  </LinearLayout>
+     
+    
+ 
+
+     <LinearLayout
+
+        android:layout_width="fill_parent"
+         android:layout_gravity="top"
+        android:layout_height="40dp"
+        android:gravity="center"
+         android:background="@drawable/bgn"
+        android:orientation="horizontal" >
+	
+      <Button
+
+        android:id="@+id/btn_order"
+      
+        android:layout_width="40dp"
+         android:background="@drawable/location"
+           android:layout_height="40dp"
+          />
+           <Button
+
+        android:id="@+id/btn_setline"
+       android:layout_marginLeft="25dp"
+        android:layout_width="40dp"
+         android:background="@drawable/time"
+           android:layout_height="40dp"
+          />
+        
+          </LinearLayout>
+   
+     <LinearLayout
+
+        android:layout_width="fill_parent"
+         android:layout_gravity="bottom"
+        android:layout_height="40dp"
+        android:gravity="center"
+         android:background="@drawable/bgn"
+        android:orientation="horizontal" >
+	
+      <Button
+
+        android:id="@+id/btn_location"
+      
+        android:layout_width="40dp"
+         android:background="@drawable/location"
+           android:layout_height="40dp"
+          />
+           <Button
+
+        android:id="@+id/btn_search"
+       android:layout_marginLeft="25dp"
+        android:layout_width="40dp"
+         android:background="@drawable/search"
+           android:layout_height="40dp"
+          />
+           <Button
+
+        android:id="@+id/btn_stepdetail"
+       android:layout_marginLeft="25dp"
+        android:layout_width="40dp"
+         android:background="@drawable/gps_icon"
+           android:layout_height="40dp"
+          />
+           <Button
+
+        android:id="@+id/btn_sound"
+       android:layout_marginLeft="25dp"
+        android:layout_width="40dp"
+         android:background="@drawable/sound"
+           android:layout_height="40dp"
+          />
+          </LinearLayout>
+   
+	
+</FrameLayout>

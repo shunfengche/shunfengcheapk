@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.shunfengche.Activity"
+      android:versionCode="1"
+      android:versionName="1.0">
+<supports-screens android:largeScreens="true"
+   android:normalScreens="true" android:smallScreens="true"
+  android:resizeable="true" android:anyDensity="true"/>
+      
+    <uses-sdk android:minSdkVersion="8" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>  
+<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission> 
+<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+<uses-permission android:name="android.permission.VIBRATE" />  
+<uses-permission android:name="android.permission.CAMERA" /> 
+    <application android:name="com.util.MyApplication"  android:icon="@drawable/icon" android:label="@string/app_name">
+ <activity android:name=".LoginActivity"
+                  android:label="@string/app_name">
+        
+        </activity>
+  <activity android:name=".MatchActivity"
+                  android:label="@string/app_name">
+       <!--   <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> -->
+        </activity>
+       <activity android:name=".SearchlineActivity"
+                  android:label="@string/app_name">
+          <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> 
+        </activity>
+        <activity android:name=".MyorderActivity"
+                  android:label="@string/app_name">
+     
+        </activity>
+ <activity android:name=".GuideActivity"
+                  android:label="@string/app_name">
+          
+        </activity>
+        <activity android:name=".MainlistActivity"
+                  android:label="@string/app_name">
+          <!--  <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>   -->
+        </activity>
+        <activity android:name=".DriverMapActivity"
+                  android:label="@string/app_name">
+          <!--   <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>  -->
+        </activity>
+        <activity android:name=".DriverRegisterActivity"
+                  android:label="@string/app_name">
+                  
+        </activity>
+        <activity android:name=".GuestRegisterActivity"
+                  android:label="@string/app_name">
+                 <!--   <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>  -->
+        </activity>
+      <activity android:name=".DriverinfoActivity"
+                  android:label="@string/app_name">
+                 
+        </activity> 
+         <!-- 羽中开始 -->
+        <activity
+            android:name=".Chat"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name=".ShowAll"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Chat_Background"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+         <activity
+            android:name=".Chat_Batch_Operation"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <!-- 羽中结束 -->
+  
+    </application>
+    
+ 
+    
+</manifest>

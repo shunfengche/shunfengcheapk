@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/andy_chat_content_root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:gravity="right">
+  <!--   分为左右两个部分 -->
+
+  <!-- 左边整体 -->
+  <LinearLayout 
+      android:gravity="right"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:background="@drawable/andy_bubble_bg_receive"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="0dp"
+      android:layout_marginLeft="80dp"
+      android:layout_marginRight="20dp"
+      >
+      <!-- 右边上部-聊天内容 -->
+      <TextView 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/chat_batch_receive"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:textColor="#000000"   
+          />
+      <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <TextView 
+          android:layout_width="60dp"
+          android:layout_height="20dp"
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="0dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_gravity="left"
+          android:id="@+id/chat_batch_time_receive" 
+          android:textColor="#000000"        
+          />
+      </LinearLayout>
+      
+  </LinearLayout>
+    <!-- 右边头像 -->
+    <LinearLayout 
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"    
+    >
+        <CheckBox
+            android:id="@+id/chat_batch_receive_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+	</LinearLayout>
+</LinearLayout>

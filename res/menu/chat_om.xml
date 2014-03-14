@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_batch_operations" android:title="批量操作" android:icon="@drawable/andy_menu_batch_operations"></item>
+    <item android:id="@+id/menu_favorite" android:title="消息收藏夹" android:icon="@drawable/andy_menu_favorite"></item>
+    <item android:id="@+id/menu_send_contact" android:title="发送名片" android:icon="@drawable/andy_menu_send_contact"></item>
+    <item android:id="@+id/menu_black_list" android:title="加入消息拦截" android:icon="@drawable/andy_menu_back_picture"></item>
+    <item android:id="@+id/menu_back_picture" android:title="设置背景" android:icon="@drawable/andy_menu_back_picture"></item>
+
+</menu>

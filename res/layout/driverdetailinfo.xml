@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" 
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@drawable/driverdetailinfoxml_bg">
+
+<RelativeLayout 
+android:orientation="vertical" 
+android:id="@+id/driverinfo"
+android:layout_width="fill_parent"
+android:layout_height="90dip"
+android:layout_marginTop="20dp"
+android:layout_marginLeft="20dp"
+android:paddingTop="10dp"
+android:paddingLeft="20dp"
+>
+<ImageView
+android:id = "@+id/driverhead"
+android:layout_width = "70dip"
+android:src="@drawable/userhead_default"
+android:layout_height = "70dip"/>
+<TextView
+android:id="@+id/drivername"
+android:textColor="#a3a989"
+android:layout_width = "70dip"
+android:layout_height = "wrap_content"
+android:textSize="18sp"
+android:layout_toRightOf="@id/driverhead"
+android:text = "长流水"/>
+<ImageView
+    android:id="@+id/userstate"
+    android:layout_width="30dip"
+    android:layout_height="30dip"
+    android:layout_toRightOf="@+id/drivername"
+   
+    android:src="@drawable/online_driverregisterxm"
+    
+     />
+<ImageView
+    android:id="@+id/chatimv"
+    android:layout_width="60dip"
+    android:layout_height="35dip"
+    android:layout_toRightOf="@+id/userstate"
+    android:src="@drawable/favorite_item_reply_icon"
+    
+     />
+<TextView
+    android:id="@+id/driverqianming"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_toRightOf="@+id/driverhead"
+    android:text="总有一天我会走遍全国"
+    android:textColor="#6f4a4a"
+    android:textSize="18sp" />
+
+
+
+
+<TextView
+    android:id="@+id/drivertelephone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/driverhead"
+    android:layout_toRightOf="@+id/driverhead"
+    android:text="13752528746"
+    android:textColor="#9eaed2"
+    android:textSize="18sp" />
+<ImageView
+android:id="@+id/imgsendmsg"
+android:layout_width = "35dip"
+android:layout_height = "35dip"
+
+android:layout_below="@id/driverqianming"
+android:layout_toRightOf="@id/drivertelephone"
+
+
+android:src="@drawable/tab_icn_inbox"
+/>
+<ImageView
+android:id="@+id/dotelephone"
+
+android:layout_width = "35dip"
+android:layout_height = "35dip"
+android:src="@drawable/icn_tt"
+android:layout_below="@id/driverqianming"
+android:layout_toRightOf="@id/imgsendmsg"
+
+/>
+
+  </RelativeLayout>
+  <LinearLayout
+android:orientation="vertical" 
+android:id="@+id/lineinfo"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/driverinfo"
+android:layout_marginTop="50dp"
+android:layout_marginLeft="25dp"
+android:layout_marginRight="20dp"
+android:gravity="center|center"
+>
+ <LinearLayout
+  android:id="@+id/lin_name"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+ 
+ 
+ >
+ 
+ <TextView
+  android:id="@+id/text_truename"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="真实姓名： " 
+   android:textColor="#5f5356"
+  android:textSize="18sp"
+  />
+  
+ <TextView
+  android:id="@+id/edit_turename"
+  android:layout_width="120dp"
+  android:layout_height="wrap_content"
+   android:textColor="#5f5356"
+  android:textSize="18sp"
+  android:text="陶渊明" 
+ />
+  
+ </LinearLayout>
+
+  <LinearLayout
+  android:id="@+id/lin_paltenum"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  
+
+ >
+ <TextView
+  android:id="@+id/text_platenum"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="车  牌  号  : " 
+   android:textColor="#5f5356"
+  android:textSize="18sp"
+  />
+
+ <TextView
+     android:id="@+id/edit_platenum"
+     android:layout_width="120dp"
+     android:layout_height="wrap_content"
+     android:text="湘A12345"
+     android:textColor="#5f5356"
+     android:textSize="18sp" />
+    
+ </LinearLayout>
+ <LinearLayout
+  android:id="@+id/lin_licensenum"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+ 
+ 
+ >
+ 
+ <TextView
+  android:id="@+id/text_licensenum"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="驾驶证号 :  " 
+  android:textColor="#5f5356"
+  android:textSize="18sp"
+  />
+  
+ <TextView
+  android:id="@+id/edit_licensenum"
+  android:layout_width="220dp"
+  android:layout_height="wrap_content"
+   android:textColor="#5f5356"
+  android:textSize="18sp"
+   android:text="430424199203205019" 
+ />
+  
+ </LinearLayout>
+ 
+ <LinearLayout
+  
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:paddingTop="10dp"
+ 
+ 
+ >
+ <ImageView  android:id="@+id/carimg" 
+ 
+ android:layout_width="180dp" 
+ android:layout_height="120dp"  
+ android:background="@drawable/carimg_driverregisterxml"/>
+  
+ </LinearLayout>
+ <LinearLayout
+ 
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+ 
+ >
+ <TextView
+
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="座位数：   " 
+  android:textColor="#b8a6a9"
+  android:textSize="22dp"
+  />
+  
+ <TextView
+  android:id="@+id/allseatnum"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+   android:text="5 " 
+   android:textSize="22dp"
+  android:textColor="#b8a6a9"
+ />
+  <TextView
+  
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="剩余：   " 
+  android:textSize="22dp"
+  android:textColor="#b8a6a9"
+  android:layout_marginLeft="30dp"
+  />
+  
+ <TextView
+  android:id="@+id/leftseatnum"
+  android:layout_width="220dp"
+  android:layout_height="32dp"
+   android:textColor="#b8a6a9"
+   android:textSize="22dp"
+   android:text="4 " 
+ />
+ </LinearLayout>
+  <TextView
+  android:id="@+id/Money"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+   android:textColor="#9f3b4e"
+   android:textSize="25sp"
+   android:text="￥33.8" 
+ />
+  <Button
+  android:id="@+id/submit_order"
+  android:layout_width="250dp"
+  android:layout_height="50dp"
+  android:background="@drawable/btn_driverdetailinfoxml"
+ 
+ />
+ </LinearLayout>
+</RelativeLayout>
+

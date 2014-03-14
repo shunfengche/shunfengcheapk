@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" 
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@drawable/mainlistxml_bg">
+
+  <LinearLayout
+android:id = "@+id/Tabselect"
+android:layout_width = "60dp"
+android:layout_height = "fill_parent"
+android:orientation="vertical"
+android:background="@null"
+
+>
+
+<com.util.MyImageView
+    android:id="@+id/tabuser"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.33"
+    android:drawableBottom="@drawable/left_bar_divider"
+    android:scaleType="matrix"
+    android:src="@drawable/tab1bg_mainlistxml" />
+
+<com.util.MyImageView
+android:id="@+id/tabdriver"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+  
+    android:layout_weight="0.33"
+ android:scaleType="matrix"
+android:src="@drawable/tab2bg_mainlistxml"
+android:drawableBottom="@drawable/left_bar_divider_3"
+/>
+<com.util.MyImageView
+android:id="@+id/tabsetting"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:scaleType="matrix"
+ android:layout_weight="0.33"
+android:src="@drawable/tab3bg_mainlistxml"
+
+/>
+</LinearLayout>
+ <LinearLayout
+android:id = "@+id/bgshade"
+android:layout_width = "1dip"
+android:layout_height = "fill_parent"
+android:orientation="vertical"
+android:layout_toRightOf = "@+id/Tabselect"
+
+>
+</LinearLayout>
+
+<RelativeLayout
+    android:id="@+id/myxinxi"
+    android:layout_width="fill_parent"
+    android:layout_height="110dip"
+    android:paddingLeft="23dip"
+    android:layout_marginTop="10dip"
+    android:paddingTop="16dp"
+    android:layout_toRightOf="@+id/bgshade"
+    android:background="@color/transparent" >
+
+<ImageView
+android:id = "@+id/myhead"
+android:layout_width = "65dip"
+android:layout_marginTop="8dip"
+android:src="@drawable/head_mainlistxml"
+android:layout_height = "65dip"/>
+<TextView
+android:id="@+id/myname"
+android:textColor="#c3b5b6"
+android:layout_width = "80dp"
+android:layout_height = "wrap_content"
+android:textSize="18sp"
+android:layout_marginTop="3dip"
+android:layout_toRightOf="@id/myhead"
+android:text = "长流水"
+/>
+<ImageView
+    android:id="@+id/changemyinfo"
+    android:layout_width="wrap_content"
+    android:layout_height="26dp"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="19dp"
+    android:layout_toRightOf="@+id/myname"
+    android:background="@drawable/changeinfo_mainlistxml"
+    android:paddingTop="-5dp" />
+<TextView
+android:id="@+id/mymood"
+android:textColor="#a2d0cd"
+android:layout_width = "fill_parent"
+android:layout_height = "wrap_content"
+android:layout_marginLeft="5dp"
+android:textSize="12sp"
+android:layout_below="@id/myname"
+android:layout_toRightOf="@id/myhead"
+android:text = "总有一天我会走遍每一山水。"
+/>
+<TextView
+android:id="@+id/txtmoney"
+android:textColor="#4c4513"
+android:layout_width = "wrap_content"
+android:layout_height = "wrap_content"
+
+android:textSize="15sp"
+android:layout_below="@id/mymood"
+android:layout_toRightOf="@id/myhead"
+android:text = "当前余额"
+/>
+<ImageView
+    android:id="@+id/docharge"
+    android:layout_width="wrap_content"
+    android:layout_height="26dp"
+    
+    android:layout_marginLeft="19dp"
+    android:layout_below="@id/mymood"
+    android:layout_toRightOf="@id/txtmoney"
+    android:background="@drawable/dochargeimg_mainlistxml"
+    />
+<TextView
+    android:id="@+id/mymoney"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/txtmoney"
+    android:layout_below="@+id/txtmoney"
+    android:layout_marginLeft="15dp"
+    android:text="￥350.0"
+    android:textColor="#52284a"
+    android:textSize="18sp" />
+
+<ImageView
+    android:id="@+id/tomoney"
+    android:layout_width="wrap_content"
+    android:layout_height="26dp"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="10dp"
+    android:layout_alignTop="@+id/docharge"
+    android:background="@drawable/tomoney_mainlistxml" />
+
+</RelativeLayout>
+
+<RelativeLayout
+android:id = "@+id/userrl"
+android:layout_width = "fill_parent"
+android:layout_height = "fill_parent"
+android:layout_below = "@+id/myxinxi"
+android:layout_marginTop="40dip"
+android:layout_toRightOf="@id/bgshade"
+>
+<com.util.MyImageView
+android:id = "@+id/userdaohang"
+  android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+
+android:scaleType="matrix"
+android:src="@drawable/mydaohang"
+/>
+<com.util.MyImageView
+android:id = "@+id/dealsearchline"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+
+android:scaleType="matrix"
+android:src="@drawable/shunfengchepipei"
+
+android:layout_toRightOf="@id/userdaohang"
+android:layout_marginTop="60dip"
+/>
+<com.util.MyImageView
+android:id = "@+id/myorder"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+
+android:scaleType="matrix"
+android:src="@drawable/myorder"
+android:layout_below = "@id/userdaohang"
+android:layout_marginTop="60dip"
+/>
+<com.util.MyImageView
+android:id = "@+id/chatroom"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+
+android:scaleType="matrix"
+android:src="@drawable/chatlist"
+
+android:layout_marginTop="60dip"
+android:layout_toRightOf="@id/myorder"
+android:layout_below = "@id/dealsearchline"
+/>
+</RelativeLayout>
+
+<RelativeLayout
+android:id = "@+id/driverrl"
+android:layout_width = "fill_parent"
+android:layout_height = "wrap_content"
+android:layout_below = "@+id/myxinxi"
+android:paddingTop="40dip"
+android:layout_toRightOf="@id/bgshade"
+>
+<com.util.MyImageView
+android:id = "@+id/driverdaohang"
+  android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+
+android:scaleType="matrix"
+android:src="@drawable/driverdaohang"
+/>
+<com.util.MyImageView
+android:id = "@+id/dealorder"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+
+android:scaleType="matrix"
+android:src="@drawable/dealorder"
+
+android:layout_toRightOf="@id/driverdaohang"
+android:layout_marginTop="60dip"
+/>
+
+<com.util.MyImageView
+android:id = "@+id/driverchatroom"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+
+android:scaleType="matrix"
+android:src="@drawable/chatlist"
+
+android:layout_marginTop="60dip"
+
+android:layout_below = "@id/driverdaohang"
+/>
+</RelativeLayout>
+
+</RelativeLayout>

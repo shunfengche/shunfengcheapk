@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dcdcdc"
+    android:orientation="vertical" >
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/searchxml_headbg"
+    android:orientation="vertical" >
+    
+
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="300dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/searchxml_contentbg"
+    android:orientation="vertical" >
+     <LinearLayout
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingTop="40dp"
+       
+        android:orientation="vertical" >
+ <EditText
+            android:id="@+id/searchline_et_start"
+            android:background="@drawable/inputbg_serchdialog"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:hint="我当前的位置"
+            android:textSize="22sp"
+             android:paddingLeft="40dp"
+             />
+   <EditText
+     android:id="@+id/searchline_et_end"
+
+            android:layout_width="220dp"
+            android:textSize="22sp"
+            android:layout_height="50dp" 
+            android:layout_marginTop="20dp"
+            android:paddingLeft="40dp"
+             android:background="@drawable/inputbg_serchdialog"/>
+
+    </LinearLayout>
+       <LinearLayout
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+   android:layout_marginLeft="10dp"
+  android:layout_height="60dp">
+    <TextView android:id="@+id/searchline_starttime" 
+        android:text="20:27" 
+        android:textSize="22sp"
+         android:textColor="#909498"
+         android:layout_marginLeft="60dp"
+         android:layout_width="60dp"
+          android:layout_height="wrap_content">
+        
+    </TextView>
+    <Button    android:id="@+id/searchline_setstarttime" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="40dp"
+         android:onClick="onClick"
+         android:background="@drawable/settimebtn_settinglinedialogxml"/>
+    </LinearLayout>
+      <LinearLayout
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  android:layout_marginLeft="10dp"
+  android:layout_height="60dp">
+    <TextView android:id="@+id/searchline_starttimedate" 
+        android:text="2013-09-21" 
+        android:textSize="22sp"
+         android:textColor="#909498"
+         
+         android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+        
+    </TextView>
+    <Button    
+        android:id="@+id/searchline_setstarttimedate" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="40dp"
+         android:onClick="onClick"
+         android:background="@drawable/settimebtn_settinglinedialogxml"/>
+    </LinearLayout>
+
+</LinearLayout>
+<Button
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+    android:id="@+id/linesearchbtn"
+    android:onClick="onClick"
+    android:background="@drawable/searchxml_searchbtn"
+     />
+   
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper android:id="@+id/flipper"  android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:app="http://schemas.android.com/apk/res/com.tencent.qqmusic"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView  android:id="@+id/guiderimage0" android:layout_width="fill_parent" android:layout_height="fill_parent"  android:background="@drawable/guide0"/>
+    <ImageView android:id="@+id/guiderimage1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/guide2"/>
+    <ImageView  android:id="@+id/guiderimage2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/guide3" />
+</ViewFlipper>

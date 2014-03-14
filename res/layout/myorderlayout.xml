@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/file_fail"
+  android:orientation="vertical"
+  >
+    <TextView
+  android:gravity="center_horizontal"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:text="我的订单"
+ 
+  />
+ <TextView
+ android:id="@+id/noorder"
+  android:gravity="center|center"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:text="抱歉你当前没有订单！"
+ 
+  />
+  <ListView
+  android:id="@+id/listmyorder"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:scrollbars="vertical"
+  android:background="@null"
+  />
+</LinearLayout>

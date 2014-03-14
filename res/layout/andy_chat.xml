@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 头部，显示图像以及心情 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="430dp"
+        android:layout_weight="7"
+        android:background="@drawable/andy_top_background_loading"
+        android:gravity="top"
+        android:orientation="horizontal" >
+
+        <!-- 用户头像 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/andy_icon1" 
+                android:id="@+id/chat_friend_pic"/>
+        </LinearLayout>
+
+        <!-- 其他两个 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <!-- 用户签名 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <!-- 分为两行	：上行名字+下行签名 -->
+                <!-- 签名+状态标识 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <!-- 状态标识 -->
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/andy_green_light_in_text" />
+                    <!-- 签名 -->
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="福建小张"
+                        android:textSize="20dp" 
+                        android:id="@+id/chat_nickname"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="很久没有出去玩啦，向往美丽的北极，带我去吧....." 
+                    android:id="@+id/chat_mood"/>
+            </LinearLayout>
+
+            <!-- 设置按钮 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="4" >
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/andy_chat_config_btn_selector"
+                    android:paddingLeft="6dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 中下部分， 聊天内容界面+聊天框 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <!-- 中间部分聊天内容界面 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:id="@+id/layout">
+
+           <!-- 用于对话的ListView组建 -->
+                    <ListView 
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/lst_chat"                       
+                        android:cacheColorHint="#00000000"  
+                        android:fadingEdge="none"  
+                        >             
+                    </ListView>        
+  
+        </LinearLayout>
+        <!-- 下部，聊天输入框    分为上下两行 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="350dp"
+            android:layout_weight="3"
+            android:background="@drawable/andy_shape"
+            android:orientation="vertical" 
+            android:id="@+id/chat_bottom">
+
+            <!-- 上行聊天输入框加两个按钮+一条分割线 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <!-- 上行聊天输入框加两个按钮 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal" >
+
+                    <!-- 表情+文本输入框 -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <!-- 表情 -->
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3"
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                android:background="@drawable/andy_chat_emotion_btn_selector" />
+                        </LinearLayout>
+                        <!-- 文本输入框 -->
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1" >
+
+                            <EditText
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:id="@+id/andy_msg_content"
+                                android:hint="输入内容，发送" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- 发送按钮 -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="4" >
+
+                        <Button
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="13dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/andy_chat_sent_selector"
+                            android:text="发送" 
+                            android:id="@+id/btn_mes_send"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 分割线 -->
+
+            </LinearLayout>
+            <!-- 下行，四个按钮 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <!-- 图片+点击对讲 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <!-- 图片 -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="17dp"
+                            android:layout_marginRight="13dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/andy_ic_picture_b" 
+                            android:id="@+id/chat_phone"/>"
+                    </LinearLayout>
+                    <!-- 点击对讲 -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <!-- 包裹录音按钮 -->
+
+                        <LinearLayout
+                            android:layout_width="45dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp" >
+
+                            <Button
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="19dp"
+                                android:layout_marginTop="6dp"
+                                android:background="@drawable/andy_ic_audio_b" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:text="点击对讲"
+                            android:textSize="21dp" 
+                            android:id="@+id/audio"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 更多 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4" >
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="13dp"
+                        android:background="@drawable/andy_chat_btn_more_selector" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

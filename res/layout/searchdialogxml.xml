@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+    android:id="@+id/searchdialog"
+    android:background="@null"
+    android:orientation="vertical">
+  
+        <LinearLayout
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingTop="120dp"
+        android:background="@drawable/bg_serchdialog"
+        android:orientation="vertical" >
+
+ 
+
+      
+ 
+
+        <EditText
+
+            android:id="@+id/et_start"
+            android:background="@drawable/inputbg_serchdialog"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="我当前的位置"
+            android:textSize="22sp"
+             android:paddingLeft="40dp"
+             />
+          <EditText
+
+            android:id="@+id/et_end"
+
+            android:layout_width="250dp"
+            android:textSize="22sp"
+            android:layout_height="50dp" 
+            android:layout_marginTop="20dp"
+            android:paddingLeft="40dp"
+             android:background="@drawable/inputbg_serchdialog"/>
+
+    </LinearLayout>
+      <LinearLayout
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal" >
+
+ 
+
+      
+
+ 
+
+      
+
+    </LinearLayout>  
+    <Button
+
+        android:id="@+id/btn_searchDrivingRoute"
+
+        android:layout_width="fill_parent"
+
+           android:layout_height="wrap_content"
+         android:background="@drawable/serchbtn_serchdialog"
+           />
+    
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 指定按下时的图片 -->
+    <item android:state_pressed="true"
+          android:drawable="@drawable/andy_btn_emotion_pressed"/>
+    <!-- 指定按钮松开时的图片 -->
+    <item android:state_pressed="false"
+        android:drawable="@drawable/andy_btn_emotion_normal"
+	/>
+</selector>    

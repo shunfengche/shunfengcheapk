@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" 
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+  android:background="@drawable/bkg_img_default">
+<LinearLayout
+android:orientation="vertical" 
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:id="@+id/l1"
+android:gravity="center_horizontal"
+>
+
+
+<EditText
+
+ android:background="@drawable/input"
+android:hint="起点"
+android:textSize="25dp" 
+android:layout_width="250dp"
+android:layout_height="40dp" 
+android:id="@+id/mystartet" 
+/>
+
+
+<EditText
+ android:background="@drawable/input"
+android:hint="终点"
+android:textSize="25dp" 
+    android:layout_width="250dp"
+android:layout_height="40dp" 
+android:id="@+id/myendet" 
+/>
+
+<Button
+android:text="顺风车匹配"
+  android:layout_width="250dp"
+ android:layout_height="40dp"
+android:background="@drawable/btn_contact_sync2_pressed"
+android:gravity="center_horizontal"
+ android:textSize="25dp"
+android:id="@+id/searchmatch"/>
+ </LinearLayout>
+<RelativeLayout 
+android:orientation="vertical" 
+android:id="@+id/lineinfo"
+android:layout_width="fill_parent"
+android:layout_height="100dip"
+android:layout_below="@id/l1"
+>
+<ImageView
+android:id = "@+id/driverhead"
+android:layout_width = "50dip"
+android:src="@drawable/userhead_default"
+android:layout_height = "50dip"/>
+<TextView
+android:id="@+id/lineid"
+android:textColor="@android:color/black"
+android:layout_width = "70dip"
+android:layout_height = "wrap_content"
+android:textSize="18sp"
+android:layout_toRightOf="@id/driverhead"
+android:text = "线路1"/>
+<TextView
+android:id="@+id/matchstarttime"
+android:textColor="@android:color/black"
+android:layout_width = "fill_parent"
+android:layout_height = "wrap_content"
+android:textSize="18sp"
+android:layout_toRightOf="@id/lineid"
+android:text = "2013年3月27号15:30"/>
+<TextView
+android:id="@+id/drivername"
+android:textColor="@android:color/black"
+android:layout_width = "50dip"
+android:layout_height = "wrap_content"
+android:textSize="14sp"
+android:layout_below="@id/driverhead"
+android:text = "刘申"
+
+/>
+<TextView
+android:id="@+id/lineseinfo"
+android:textColor="@android:color/black"
+android:layout_width = "100dp"
+android:layout_height = "wrap_content"
+android:textSize="15sp"
+android:layout_below="@id/lineid"
+android:layout_toRightOf="@id/driverhead"
+android:text = "天津到北京"
+/>
+<TextView
+android:id="@+id/linemoney"
+
+android:layout_width = "fill_parent"
+android:layout_height = "wrap_content"
+android:textSize="18sp"
+android:layout_below="@id/matchstarttime"
+android:layout_toRightOf="@id/lineseinfo"
+android:text = "$4.0"
+/>
+  </RelativeLayout>
+ 
+  <com.baidu.mapapi.MapView android:id="@+id/bmapsView"
+   android:layout_below="@id/lineinfo"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:clickable="true" />
+</RelativeLayout>

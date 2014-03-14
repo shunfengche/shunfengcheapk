@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bkg_img_default"
+    android:orientation="vertical"
+    android:paddingTop="115dp" >
+
+    <TableLayout
+        android:id="@+id/tablelayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="230dp"
+        android:gravity="center|center"
+        android:paddingLeft="40dp">
+
+        <!-- 第一行 android:background="@drawable/loading_big3" -->
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="250dp"
+                android:layout_height="40dp" >
+
+            <EditText
+                android:id="@+id/usneditText"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:background="@drawable/input"
+                android:hint="帐号"
+                android:minWidth="200dp"
+               android:textSize="25dp" />
+        </TableRow>
+        <!-- 第二行 -->
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="250dp"
+                android:layout_height="40dp" >
+
+            <EditText
+                android:id="@+id/paweditText"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:background="@drawable/input"
+                android:hint="密码"
+                android:textSize="25dp"
+                android:inputType="textPassword" />
+        </TableRow>
+        <!-- 第三行 -->
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_contact_sync2_pressed"
+                android:text="登录" 
+                android:textSize="25dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="忘记密码"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="0dp" >
+
+                    <TextView
+                        android:id="@+id/btnReg01"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="70dp"
+                        android:textSize="20dp"
+                        android:text="注册"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+
+       
+    </TableLayout>
+
+</LinearLayout>

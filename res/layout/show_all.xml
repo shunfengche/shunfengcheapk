@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 头部，显示图像以及心情 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="430dp"
+        android:layout_weight="7"
+        android:background="@drawable/andy_top_background_loading"
+        android:gravity="top"
+        android:orientation="horizontal" >
+
+      <!--    返回按钮 -->
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/andy_icon_return_normal" 
+                android:id="@+id/return_back"/>
+        </FrameLayout>
+<!--         聊天对象名称 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            
+             >
+			<TextView 
+			    android:layout_width="wrap_content"
+           	    android:layout_height="wrap_content"
+           	    android:text="所有信息"
+           	    android:textSize="25dp"
+           	    android:textColor="#000000"
+           	    android:layout_gravity="center"
+           	    android:layout_marginLeft="40dp"
+ 
+           	    />
+        </LinearLayout>
+        
+       
+        
+    </LinearLayout>
+
+<!--     中下部分， 聊天内容界面+聊天框 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" 
+        android:background="@drawable/andy_chat_view_background">
+
+        <!-- 用于对话的ListView组建 -->
+                    <ListView 
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/chat_show_all"                       
+                        android:cacheColorHint="#00000000"  
+                        android:fadingEdge="none"  
+                		></ListView>
+     </LinearLayout> 
+</LinearLayout>

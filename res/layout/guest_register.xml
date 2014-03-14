@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/guestregister_bg"
+    android:paddingTop="100dp"
+    android:paddingLeft="90dp"
+    >
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:paddingLeft="2dp"
+    >
+
+
+<EditText
+    android:id="@+id/edtext_user"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:hint="用户名"
+    android:paddingLeft="26dp"
+    android:textSize="18sp"
+    android:background="@drawable/userinputbg"
+    />
+     <TextView
+    android:id="@+id/edtext_userflag"
+    android:layout_width="wrap_content" 
+    android:layout_height="32dp"
+    android:text="*"
+    android:textSize="8sp"
+    android:textColor="#f92323"
+    />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+
+<EditText
+    android:id="@+id/edtext_psw"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+     android:password="true"
+     android:hint="密码"
+    android:paddingLeft="26dp"
+    android:textSize="18sp"
+    android:background="@drawable/passwordinputbg"
+    />
+    <TextView
+    android:id="@+id/edtext_pswflag"
+    android:layout_width="wrap_content" 
+    android:layout_height="32dp"
+    android:text="*"
+     android:textSize="8sp"
+    android:textColor="#f92323"
+    />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+
+<EditText
+    android:id="@+id/edtext_sure_psw"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+     android:password="true"
+        android:hint="再次输入密码"
+    android:paddingLeft="26dp"
+    android:textSize="18sp"
+    android:background="@drawable/passwordinputbg"
+    />
+    <TextView
+    android:id="@+id/edtext_sure_pswflag"
+    android:layout_width="wrap_content" 
+    android:layout_height="32dp"
+    android:text="*"
+     android:textSize="8sp"
+    android:textColor="#f92323"
+    />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+    >
+
+<EditText
+    android:id="@+id/edtext_phnum"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:hint="手机号       "
+    android:inputType="phone"
+      android:paddingLeft="29dp"
+    android:textSize="18sp"
+    android:background="@drawable/telnuminputbg"
+    />
+     <TextView
+    android:id="@+id/edtext_phnumflag"
+    android:layout_width="wrap_content" 
+    android:layout_height="32dp"
+    android:text="*"
+     android:textSize="8sp"
+    android:textColor="#f92323"
+    />
+</LinearLayout>
+
+
+<LinearLayout
+  android:id="@+id/lin_name"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:paddingLeft="2dp"
+ >
+
+ <EditText
+  android:id="@+id/edit_name"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content" 
+  android:paddingLeft="26dp"
+   android:hint="真实姓名   " 
+   android:textSize="18sp"
+  android:background="@drawable/userinputbg"/>
+   <TextView
+    android:id="@+id/edit_nameflag"
+    android:layout_width="wrap_content" 
+    android:layout_height="32dp"
+    android:text="*"
+      android:textSize="8sp"
+    android:textColor="#f92323"
+    />
+ </LinearLayout>
+ <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+   >
+
+<EditText
+    android:id="@+id/edtext_idnum"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:paddingLeft="26dp"
+    android:inputType="number"
+    android:textSize="18sp"
+     android:hint="身份证号   "
+    android:background="@drawable/idcardnuminputbg"
+    />
+    <TextView
+    android:id="@+id/edtext_idnumflag"
+    android:layout_width="wrap_content" 
+    android:layout_height="32dp"
+    android:text="*"
+     android:textSize="8sp"
+    android:textColor="#f92323"
+    />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+   >
+
+<Button
+    android:id="@+id/getyanzhengmabtn"
+    android:layout_width="wrap_content" 
+    android:layout_height="40dp"
+   
+    android:background="@drawable/yanzhenmabtn_guestregisterxml"
+    />
+<EditText
+    android:id="@+id/edtext_idnum"
+    android:layout_width="80dp" 
+    android:layout_height="40dp"
+    android:paddingLeft="16dp"
+    android:inputType="number"
+    android:textSize="18sp"
+     android:hint="1456 "
+    android:background="@drawable/idcardnuminputbg"
+    />
+    <TextView
+    android:id="@+id/edtext_yanzhengmaflag"
+    android:layout_width="wrap_content" 
+    android:layout_height="32dp"
+    android:text="*"
+     android:textSize="8sp"
+    android:textColor="#f92323"
+    />
+</LinearLayout>
+<LinearLayout
+  android:id="@+id/lin_submit"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginTop="10dp"
+  
+ >
+ <Button
+  android:id="@+id/submit_guest"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/registerbtn_guestregisterxml"
+ 
+ />
+ 
+ </LinearLayout>
+</LinearLayout>

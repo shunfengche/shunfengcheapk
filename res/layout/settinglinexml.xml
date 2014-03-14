@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/settinglinedialogxml_bg"
+  android:paddingLeft="30dp"
+  android:paddingTop="130dp"
+  android:orientation="vertical">
+  <LinearLayout
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  
+  android:layout_height="40dp">
+    <TextView android:text="总座位数：" 
+         android:layout_width="120dp"
+         android:layout_height="wrap_content"
+         android:textSize="22sp"
+         android:textColor="#909498">
+        
+    </TextView>
+    <EditText  android:id="@+id/seating" 
+        android:layout_width="120dp" 
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:background="@drawable/inputbg_settinglinedialogxml">
+        
+    </EditText>
+    </LinearLayout>
+    <LinearLayout
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  android:layout_height="40dp">
+    <TextView android:text="车       速："  
+        android:layout_width="120dp" 
+        android:layout_height="wrap_content"
+         android:textSize="22sp"
+         android:textColor="#909498">
+        
+    </TextView>
+    <EditText    android:id="@+id/speedet" 
+        android:layout_width="120dp" 
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="22sp"
+         android:textColor="#909498"
+        android:background="@drawable/inputbg_settinglinedialogxml">
+        
+    </EditText>
+    </LinearLayout>
+     <LinearLayout
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  android:layout_height="60dp">
+    <TextView android:id="@+id/starttime" 
+        android:text="20:27" 
+        android:textSize="22sp"
+         android:textColor="#909498"
+         android:layout_marginLeft="60dp"
+         android:layout_width="60dp"
+          android:layout_height="wrap_content">
+        
+    </TextView>
+    <Button    android:id="@+id/setstarttime" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="40dp"
+         android:background="@drawable/settimebtn_settinglinedialogxml"/>
+    </LinearLayout>
+      <LinearLayout
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  android:layout_height="60dp">
+    <TextView android:id="@+id/starttimedate" 
+        android:text="2013-09-21" 
+        android:textSize="22sp"
+         android:textColor="#909498"
+         
+         android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+        
+    </TextView>
+    <Button    android:id="@+id/setstarttimedate" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="40dp"
+         android:background="@drawable/settimebtn_settinglinedialogxml"/>
+    </LinearLayout>
+    <Button  
+    android:id="@+id/aplayline"
+    android:layout_width="250dp"
+  android:layout_height="40dp"
+  android:background="@drawable/btn_settinglinedialogxml"/>
+</LinearLayout>
